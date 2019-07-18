@@ -1,0 +1,110 @@
+*
+{
+margin: 0;
+  padding: 0;
+
+}
+ul{
+  list-style: none;
+}
+html,body,#app{
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+#header{
+  position: relative;
+  height: 10vh;
+  background: aqua;
+  z-index: 1001;
+  h3{
+    font: normal 20px/10vh '宋体';
+    text-align: center;
+    color: #000;
+  }
+}
+#main{
+  position: relative;
+  height: 90vh;
+  .album{
+    position: relative;
+    .album-list{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        flex:none;
+        width: 44vw;
+        height: 44vw;
+        margin: 3vw;
+        background: url("../img/loadingImg.gif") no-repeat center;
+
+        //border-radius: 3vw;
+        //overflow: hidden;
+        img{
+          width: 100%;
+          height: 100%;
+          display: block;
+          border-radius: 2vw;
+          opacity: 0;
+          transition: 1s;
+        }
+      }
+    }
+    .album-footer{
+      position: absolute;
+      left: 0;
+      bottom: -20vh;
+      width: 100%;
+      height: 20vh;
+      font: 18px/20vh '宋体';
+      text-align: center;
+
+    }
+  }
+  #scrollBar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background:#ccc;
+    width: 3px;
+  }
+}
+
+#bigImage{
+  z-index: 100001;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #eee;
+  transform: scale(0);
+  transition: 1s transform;
+
+
+  .bigImage-header{
+    height: 10vh;
+    font: 20px/10vh '宋体';
+    color: #fff;
+    text-align: center;
+    background: rgba(0,0,0,.8);
+    .close{
+      position: absolute;
+      right: 10px;
+    }
+  }
+  img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 70vw;
+    height: 70vw;
+  }
+
+}

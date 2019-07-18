@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,viewport-fit:cover">
+    <title>两个小可爱</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+<audio src="img/小星星.mp3" loop id="audio"></audio>
+<div id="app">
+    <!--头部-->
+    <header id="header">
+        <h3>我的外甥和外甥女</h3>
+    </header>
+    <!--主体-->
+    <div id="main">
+        <div class="album">
+            <ul class="album-list"></ul>
+            <footer class="album-footer">上滑加载更多内容</footer>
+        </div>
+
+        <!--滚动条-->
+        <div id="scrollBar"></div>
+    </div>
+
+    <!--大图-->
+    <div id="bigImage">
+        <div class="bigImage-header">
+            俩小宝
+            <span class="close">&times;</span>
+        </div>
+        <img src="img/1.jpg" >
+    </div>
+</div>
+</body>
+<script src="js/transform.js"></script>
+<script src="js/touchscroll.js"></script>
+<script src="js/gesture.js"></script>
+<script src="js/index.js"></script>
+</html>
